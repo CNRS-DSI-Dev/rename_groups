@@ -1,0 +1,6 @@
+{
+    "require": {
+        "league/climate": "~2.0",
+        "league/csv": "6.2.*@dev"
+    }
+}
