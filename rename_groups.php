@@ -91,8 +91,8 @@ class GroupRenamer
         $this->log("Starting.");
 
         // Maintenance ?
-        if ($this->isMaintenanceMode()) {
-            $this->cli->red()->out('We are in maintenance mode, exiting now.');
+        if (!$this->isMaintenanceMode()) {
+            $this->cli->red()->out('Please, set maintenance mode before renaming groups. Exiting now.');
             exit;
         }
 

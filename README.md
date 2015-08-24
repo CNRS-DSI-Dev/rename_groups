@@ -43,7 +43,7 @@ To use this script without owncloud, you need to comment the lines (93-97) that 
 ```php
     // Maintenance ?
     if ($this->isMaintenanceMode()) {
-        $this->cli->red()->out('We are in maintenance mode, exiting now.');
+        $this->cli->red()->out('Please, set maintenance mode before renaming groups. Exiting now.');
         exit;
     }
 ```
@@ -53,7 +53,7 @@ becomes
 ```php
 //    // Maintenance ?
 //    if ($this->isMaintenanceMode()) {
-//        $this->cli->red()->out('We are in maintenance mode, exiting now.');
+//        $this->cli->red()->out('Please, set maintenance mode before renaming groups. Exiting now.');
 //        exit;
 //    }
 ```
